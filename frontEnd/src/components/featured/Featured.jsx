@@ -9,7 +9,7 @@ export default function Featured({ type, setGenre }) {
 	useEffect(() => {
 		const getRandomContent = async () => {
 			try {
-				const res = await axios.get(`/movies/random?type=${type}`, {
+				const res = await axios.get(`https://netflixclone-dnkc.onrender.com/movies/random?type=${type}`, {
 					headers: {
 						token: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNjQwNDhlNTBhYjVjYjJiMDU1ZDY2YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDMxMTk1OCwiZXhwIjo4ODAzNDIyNTU1OH0.gSAn89h0KC00ObXfiVO--sIQT7BFHZl4SRuEsQ4Btzs',
 					},
