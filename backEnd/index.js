@@ -20,10 +20,10 @@ mongoose
 
 
 app.use(cors({
-  origin: true,
-  credentials: true,
+  origin: '*', // ⚠️ Xavfsizlik uchun faqat testda oching
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
-
 
 app.use(express.json());
 
