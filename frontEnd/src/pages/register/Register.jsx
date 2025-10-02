@@ -21,7 +21,7 @@ export const Register = () => {
 		setPassword(passwordRef.current.value);
 		setUsername(usernameRef.current.value);
 		try {
-			await axios.post('https://netflixclone-dnkc.onrender.com/auth/register', { email, username, password });
+			await axios.post('https://netflixclone-dnkc.onrender.com/api/auth/register', { email, username, password });
 			history.push('/login');
 		} catch (err) {
 			console.log(err);
