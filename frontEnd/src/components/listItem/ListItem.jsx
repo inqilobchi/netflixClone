@@ -16,7 +16,7 @@ export default function ListItem({ index, item }) {
 	useEffect(() => {
 		const getMovie = async () => {
 			try {
-				const res = await axios.get('https://netflixclone-dnkc.onrender.com/movies/find/' + item, {
+				const res = await axios.get('https://netflixclone-dnkc.onrender.com/api/movies/find/' + item, {
 					headers: {
 						token: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNjQwNDhlNTBhYjVjYjJiMDU1ZDY2YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNDMxMTk1OCwiZXhwIjo4ODAzNDIyNTU1OH0.gSAn89h0KC00ObXfiVO--sIQT7BFHZl4SRuEsQ4Btzs',
 					},
