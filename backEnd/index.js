@@ -20,11 +20,8 @@ mongoose
 
 
 app.use(cors({
-  origin: '*', // ⚠️ Xavfsizlik uchun faqat testda oching
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
- allowedHeaders: ['Content-Type', 'Authorization', 'token'],
+  origin: 'https://netflix-clone-sigma-seven-21.vercel.app',
 }));
-
 app.use(express.json());
 
 app.use('/api/auth', authRoute);
